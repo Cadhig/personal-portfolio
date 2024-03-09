@@ -1,0 +1,15 @@
+:root {
+    --base: #1E8449;
+}
+
+header {
+    display: inline-block;
+    background-color: var(--base);
+    width:40%;
+    display:flex;
+}
+
+nav {
+    background-color: var(--base);
+    width:60%;
+}
