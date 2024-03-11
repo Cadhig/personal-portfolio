@@ -1,15 +1,46 @@
 :root {
     --base: #1E8449;
+    --hover: #38DEF1;
+    --navbar: #68C978; 
 }
 
 header {
-    display: inline-block;
     background-color: var(--base);
-    width:40%;
-    display:flex;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
 }
 
-nav {
-    background-color: var(--base);
-    width:60%;
+  header h1 {
+    display: inline-block;
+    padding: 20px 30px 20px 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--navbar);
+    margin-left: -10px;
+    font-size: 40px;
+    
+  }
+
+  nav {
+    float: right;
+    margin-top: 30px; 
+  }
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 60px;
+    font-size: 35px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
 }
+
+nav ul li a {
+    color:white;
+}
+
+nav ul li a:hover {
+    cursor: grab;
+    color: var(--hover)
+}
+
+
