@@ -1,7 +1,13 @@
 :root {
     --base: #1E8449;
-    --hover: #38DEF1;
+    --hover: #306C89;
     --navbar: #68C978; 
+    --background: #212823;
+    --text: white;
+    --border: black;
+    --proj-height: 55px;
+    --proj-width: 35%;
+    --proj-border: 6px solid black;
 }
 
 header {
@@ -17,20 +23,21 @@ header {
     background-color: var(--navbar);
     margin-left: -10px;
     font-size: 40px;
+    color: var(--text);
     
   }
 
   nav {
     float: right;
-    margin-top: 30px; 
+    margin-top: 35px; 
   }
 
 nav ul li {
     list-style-type: none;
     display: inline-block;
-    margin-right: 60px;
+    margin-right: 65px;
     font-size: 35px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
 }
 
@@ -43,4 +50,140 @@ nav ul li a:hover {
     color: var(--hover)
 }
 
+body {
+  background-color: var(--background);
+}
 
+aside {
+  width: 23%;
+  float: left;
+  border-right: 4px solid var(--base);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  
+}
+
+aside p {
+  font-size: 40px;
+  color: var(--text)
+}
+
+.aside-about {
+  margin: 140px 30px 0 0;
+}
+
+.aside-project {
+  margin: 500px 30px 0 0;
+}
+
+.aside-contact {
+  margin: 650px 30px 50px 0;
+}
+
+.main {
+  width: 77%;
+  float: right;
+  margin: 0px -10px 0 -10px;
+  color: var(--text)
+}
+
+#about-me {
+  height: 25%;
+}
+
+section h2 {
+  text-align: center;
+}
+
+.selfie {
+  float: left;
+  margin: 35px 0px 20px 35px;
+  border-radius: 10%;
+}
+
+.paragraph {
+  margin-left: 13%;
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 22px;
+}
+
+#projects {
+ border-top: 4px solid var(--base);
+ height: 100vh;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ 
+}
+
+.project-1 {
+  padding: 50px;
+  width: 80%;
+  height: 30%;
+  border: var(--proj-border);
+  background-color: green;
+  margin: 30px 80px -50px 85px;
+}
+
+.project-2 {
+  padding: 50px;
+  width: var(--proj-width);
+  height: var(--proj-height);
+  border: var(--proj-border);
+  background-color: red;
+  margin: 10px 0px -50px 85px;
+}
+
+.project-3 {
+  padding: 50px;
+  width: var(--proj-width);
+  height: var(--proj-height);
+  border: var(--proj-border);
+  background-color: blue;
+  margin: 10px 95px -50px 30px;
+}
+
+.project-4 {
+  padding: 50px;
+  width: var(--proj-width);
+  height: var(--proj-height);
+  border: var(--proj-border);
+  background-color: yellow;
+  margin: 0px 0px -10px 85px;
+}
+
+.project-5 {
+  padding: 50px;
+  width: var(--proj-width);
+  height: var(--proj-height);
+  border: var(--proj-border);
+  background-color: purple;
+  margin: 0px 95px -10px 30px;
+}
+
+#contact {
+  border-top: 4px solid var(--base)
+}
+ footer {
+  position: absolute;
+  margin-top: 1480px;
+  width: 100%;
+  text-align: center;
+  background-color: #1E8449;
+  margin-left: -10px;
+  margin-right: -10px;
+ }
+
+ footer div {
+  display: inline-block;
+ }
+
+ footer a {
+  float: right;
+  margin: 40px 30px 0 0;
+  font-size: 20px;
+ }
