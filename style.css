@@ -168,16 +168,13 @@ section h2 {
 #contact {
   border-top: 4px solid var(--base)
 }
- footer {
-  position: absolute;
-  margin-top: 1480px;
-  width: 100%;
+ .footer {
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
-  background-color: #1E8449;
-  margin-left: -10px;
-  margin-right: -10px;
+  background-color: var(--base);
+  margin: 0 -10px -10px -10px;
  }
-
  footer div {
   display: inline-block;
  }
