@@ -8,6 +8,9 @@
     --proj-height: 55px;
     --proj-width: 35%;
     --proj-border: 6px solid black;
+    --laptop-width: 35px;
+    --laptop-height: 54px;
+    --laptop-border: 6px solid black;
 }
 
 /* Header base and "cadence higgins" */
@@ -118,65 +121,87 @@ section h2 {
 
 /* projects section */
 #projects {
- border-top: 4px solid var(--base);
- height: 100vh;
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-between;
+  border-top: 4px solid var(--base);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+ }
  
-}
-
-.project-1 {
-  padding: 50px;
-  width: 80%;
-  height: 30%;
-  border: var(--proj-border);
-  background-color: green;
-  margin: 30px 80px -50px 85px;
-}
-
-.project-2 {
-  padding: 50px;
-  width: var(--proj-width);
-  height: var(--proj-height);
-  border: var(--proj-border);
-  background-color: red;
-  margin: 10px 0px -50px 85px;
-}
-
-.project-3 {
-  padding: 50px;
-  width: var(--proj-width);
-  height: var(--proj-height);
-  border: var(--proj-border);
-  background-color: blue;
-  margin: 10px 95px -50px 30px;
-}
-
-.project-4 {
-  padding: 50px;
-  width: var(--proj-width);
-  height: var(--proj-height);
-  border: var(--proj-border);
-  background-color: yellow;
-  margin: 0px 0px -10px 85px;
-}
-
-.project-5 {
-  padding: 50px;
-  width: var(--proj-width);
-  height: var(--proj-height);
-  border: var(--proj-border);
-  background-color: purple;
-  margin: 0px 95px -10px 30px;
-}
+ .project-1 {
+   padding: 50px;
+   width: 80%;
+   height: 30%;
+   border: var(--proj-border);
+   background-color: green;
+   margin: 30px 80px -50px 85px;
+ }
+ 
+ .project-2 {
+   padding: 50px;
+   width: var(--proj-width);
+   height: var(--proj-height);
+   border: var(--proj-border);
+   background-color: red;
+   margin: 10px 0px -50px 85px;
+ }
+ 
+ .project-3 {
+   padding: 50px;
+   width: var(--proj-width);
+   height: var(--proj-height);
+   border: var(--proj-border);
+   background-color: blue;
+   margin: 10px 95px -50px 30px;
+ }
+ 
+ .project-4 {
+   padding: 50px;
+   width: var(--proj-width);
+   height: var(--proj-height);
+   border: var(--proj-border);
+   background-color: yellow;
+   margin: 0px 0px -10px 85px;
+ }
+ 
+ .project-5 {
+   padding: 50px;
+   width: var(--proj-width);
+   height: var(--proj-height);
+   border: var(--proj-border);
+   background-color: purple;
+   margin: 0px 95px -10px 30px;
+ }
 
 /* contact sectiion */
 #contact {
-  border-top: 4px solid var(--base)
+  border-top: 4px solid var(--base);
+  height: 10vh;
 }
 
+.contact-list {
+  margin-top: 100px;
+}
+
+.contact-list-items {
+  list-style-type: none;
+  display: inline;
+  margin-left: 180px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.github {
+  color: white;
+  text-decoration: none;
+}
+
+.github:hover {
+  color: var(--hover);
+  cursor: grab;
+}
 /* footer */
  .footer {
   clear: both;
@@ -194,3 +219,106 @@ section h2 {
   margin: 40px 30px 0 0;
   font-size: 20px;
  }
+
+ /* media queries */
+ /* Laptop sizes */
+ @media screen  and (min-width: 1117px) 
+ and (max-width: 1900px)
+   {
+    /*side column  */
+  aside {
+   width: 15%;
+  }
+
+/* right side content */
+  .main {
+    width: 85%;
+    float: right;
+    margin: 0px -10px 0 -10px;
+    color: var(--text)
+  }
+
+/* about me section */
+  .selfie {
+    float: left;
+    margin: 35px 0px 20px 35px;
+    border-radius: 10%;
+  }
+  .paragraph {
+    margin-left: 9%;
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size: 19px;
+  }
+
+  /* projects section */
+  #projects {
+    border-top: 4px solid var(--base);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+   }
+   
+   .project-1 {
+     padding: 50px;
+     width: 80%;
+     height: 30%;
+     border: var(--proj-border);
+     background-color: green;
+     margin: 30px 80px -50px 85px;
+   }
+   
+   .project-2 {
+     padding: 50px;
+     width: 27%;
+     height: 45px;
+     border: var(--proj-border);
+     background-color: red;
+     margin: 10px 0px -50px 85px;
+   }
+   
+   .project-3 {
+     padding: 50px;
+     width: 27%;
+     height: 45px;
+     border: var(--proj-border);
+     background-color: blue;
+     margin: 10px 80px -50px 30px;
+   }
+   
+   .project-4 {
+     padding: 50px;
+     width: 27%;
+     height: 45px;
+     border: var(--proj-border);
+     background-color: yellow;
+     margin: 0px 0px -10px 85px;
+   }
+   
+   .project-5 {
+     padding: 50px;
+     width: 27%;
+     height: 45px;
+     border: var(--proj-border);
+     background-color: purple;
+     margin: 0px 80px -10px 30px;
+   }
+
+   /* contact list */
+   .contact-list {
+    margin-top: 190px;
+  }
+  
+  .contact-list-items {
+    list-style-type: none;
+    display: inline;
+    margin-left: 100px;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+ }
+
