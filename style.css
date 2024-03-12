@@ -10,6 +10,7 @@
     --proj-border: 6px solid black;
 }
 
+/* Header base and "cadence higgins" */
 header {
     background-color: var(--base);
     padding: 10px;
@@ -27,6 +28,7 @@ header {
     
   }
 
+/* navbar */
   nav {
     float: right;
     margin-top: 35px; 
@@ -54,6 +56,7 @@ body {
   background-color: var(--background);
 }
 
+/* left sidebar */
 aside {
   width: 23%;
   float: left;
@@ -69,6 +72,7 @@ aside p {
   color: var(--text)
 }
 
+/* sidebar spacing */
 .aside-about {
   margin: 140px 30px 0 0;
 }
@@ -81,6 +85,7 @@ aside p {
   margin: 650px 30px 50px 0;
 }
 
+/* main css for all sections on right */
 .main {
   width: 77%;
   float: right;
@@ -88,6 +93,7 @@ aside p {
   color: var(--text)
 }
 
+/* about me section */
 #about-me {
   height: 25%;
 }
@@ -110,6 +116,7 @@ section h2 {
   font-size: 22px;
 }
 
+/* projects section */
 #projects {
  border-top: 4px solid var(--base);
  height: 100vh;
@@ -165,9 +172,12 @@ section h2 {
   margin: 0px 95px -10px 30px;
 }
 
+/* contact sectiion */
 #contact {
   border-top: 4px solid var(--base)
 }
+
+/* footer */
  .footer {
   clear: both;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
