@@ -10,13 +10,14 @@
     --proj-border: 6px solid black;
 }
 
-/* Header base and "cadence higgins" */
+/* Header base */
 header {
     background-color: var(--base);
     padding: 10px;
     margin: -10px -10px 0px -10px;
 }
 
+/* "Cadence Higgins" on header */
   header h1 {
     display: inline-block;
     padding: 20px 30px 20px 100px;
@@ -28,12 +29,13 @@ header {
     
   }
 
-/* navbar */
+/* navbar positioning*/
   nav {
     float: right;
     margin-top: 35px; 
   }
 
+/* navbar list positioning and decoration */
 nav ul li {
     list-style-type: none;
     display: inline-block;
@@ -43,20 +45,23 @@ nav ul li {
     text-decoration: underline;
 }
 
+/* navbar button colors */
 nav ul li a {
     color:white;
 }
 
+/* navbar hover actions */
 nav ul li a:hover {
     cursor: grab;
     color: var(--hover)
 }
 
+/* webpage background */
 body {
   background-color: var(--background);
 }
 
-/* left sidebar */
+/* left sidebar positioning and border*/
 aside {
   width: 23%;
   float: left;
@@ -67,20 +72,23 @@ aside {
   
 }
 
+/* left sidebar text decor */
 aside p {
   font-size: 40px;
   color: var(--text)
 }
 
-/* sidebar spacing */
+/* sidebar spacing about section */
 .aside-about {
   margin: 140px 30px 0 0;
 }
 
+/* sidebar spacing project section */
 .aside-project {
   margin: 500px 30px 0 0;
 }
 
+/* sidebar spacing contact section */
 .aside-contact {
   margin: 650px 30px 50px 0;
 }
@@ -98,16 +106,19 @@ aside p {
   height: 25%;
 }
 
+/* header align in about me */
 section h2 {
   text-align: center;
 }
 
+/* image alignment in about me */
 .selfie {
   float: left;
   margin: 35px 0px 20px 35px;
   border-radius: 10%;
 }
 
+/* paragraph alignment and size in about me */
 .paragraph {
   margin-left: 13%;
   float: left;
@@ -116,7 +127,7 @@ section h2 {
   font-size: 22px;
 }
 
-/* projects section */
+/* projects section box*/
 #projects {
  border-top: 4px solid var(--base);
  height: 100vh;
@@ -185,10 +196,12 @@ section h2 {
   background-color: var(--base);
   margin: 0 -10px -10px -10px;
  }
+ 
  footer div {
   display: inline-block;
  }
 
+ /* alignment of "back to top" element */
  footer a {
   float: right;
   margin: 40px 30px 0 0;
