@@ -117,8 +117,9 @@ section h2 {
 /* image alignment in about me */
 .selfie {
   float: left;
-  margin: 35px 0px 20px 35px;
+  margin: 35px 0px 20px 65px;
   border-radius: 10%;
+  width: 20%;
 }
 
 /* paragraph alignment and size in about me */
@@ -148,6 +149,8 @@ section h2 {
    border: var(--proj-border);
    background-color: green;
    margin: 30px 80px -50px 85px;
+   text-align: center;
+   font-size: 40px;
  }
  
  .project-2 {
@@ -157,6 +160,7 @@ section h2 {
    border: var(--proj-border);
    background-color: red;
    margin: 10px 0px -50px 85px;
+   text-align: center;
  }
  
  .project-3 {
@@ -166,6 +170,7 @@ section h2 {
    border: var(--proj-border);
    background-color: blue;
    margin: 10px 95px -50px 30px;
+   text-align: center;
  }
  
  .project-4 {
@@ -175,6 +180,7 @@ section h2 {
    border: var(--proj-border);
    background-color: yellow;
    margin: 0px 0px -10px 85px;
+   text-align: center;
  }
  
  .project-5 {
@@ -184,6 +190,7 @@ section h2 {
    border: var(--proj-border);
    background-color: purple;
    margin: 0px 95px -10px 30px;
+   text-align: center;
  }
 
 /* contact sectiion */
@@ -334,4 +341,237 @@ section h2 {
     text-decoration: underline;
   }
  }
+/* Tablet
+ */
+@media screen and (min-width: 868px)
+and (max-width: 1116px) {
+  /* Header base */
+header {
+  background-color: var(--base);
+  padding: 10px;
+  margin: -10px -10px 0px -10px;
+}
 
+/* "Cadence Higgins" on header */
+header h1 {
+  display: inline-block;
+  padding: 20px 30px 20px 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: var(--navbar);
+  margin-left: -10px;
+  font-size: 25px;
+  color: var(--text);
+  
+}
+  /* navbar list positioning and decoration */
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 35px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: underline;
+}
+  /* about me section */
+  .selfie {
+    float: left;
+    margin: 35px 0px 20px 35px;
+    border-radius: 10%;
+  }
+  .paragraph {
+    margin-left: 5%;
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  /* projects section */
+  #projects {
+    border-top: 4px solid var(--base);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+   }
+   
+   .project-1 {
+     padding: 50px;
+     width: 80%;
+     height: 30%;
+     border: var(--proj-border);
+     background-color: green;
+     margin: 30px 80px -50px 85px;
+   }
+   
+   .project-2 {
+     padding: 50px;
+     width: 17%;
+     height: 45px;
+     border: var(--proj-border);
+     background-color: red;
+     margin: 10px 0px -50px 85px;
+   }
+   
+   .project-3 {
+     padding: 50px;
+     width: 17%;
+     height: 45px;
+     border: var(--proj-border);
+     background-color: blue;
+     margin: 10px 80px -50px 30px;
+   }
+   
+   .project-4 {
+     padding: 50px;
+     width: 17%;
+     height: 45px;
+     border: var(--proj-border);
+     background-color: yellow;
+     margin: 0px 0px -10px 85px;
+   }
+   
+   .project-5 {
+     padding: 50px;
+     width: 17%;
+     height: 45px;
+     border: var(--proj-border);
+     background-color: purple;
+     margin: 0px 80px -10px 30px;
+   }
+
+   /* contact list */
+   .contact-list {
+    margin-top: 190px;
+  }
+  
+  .contact-list-items {
+    list-style-type: none;
+    display: inline;
+    margin-left: 100px;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+}
+
+/* phone */
+@media screen and (min-width: 480px)
+and (max-width: 867px){
+  aside {
+    display: none;
+  }
+.main {
+  width: 100%;
+}
+
+    /* Header base */
+header {
+  background-color: var(--base);
+  padding: 10px;
+  margin: -10px -10px 0px -10px;
+}
+
+/* "Cadence Higgins" on header */
+header h1 {
+  display: inline-block;
+  padding: 20px 30px 20px 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: var(--navbar);
+  margin-left: -10px;
+  font-size: 17px;
+  color: var(--text);
+  
+}
+  /* navbar list positioning and decoration */
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: underline;
+}
+  /* about me section */
+  .selfie {
+    float: left;
+    margin: 35px 0px 20px 35px;
+    border-radius: 10%;
+  }
+  .paragraph {
+    margin-left: 5%;
+    float: left;
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  /* projects section */
+  #projects {
+    border-top: 4px solid var(--base);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+   }
+   
+   .project-1 {
+     padding: 50px;
+     width: 80%;
+     height: 20%;
+     border: var(--proj-border);
+     background-color: green;
+     margin: 30px 80px -50px 85px;
+   }
+   
+   .project-2 {
+     padding: 50px;
+     width: 5%;
+     height: 15px;
+     border: var(--proj-border);
+     background-color: red;
+     margin: 10px 0px -50px 85px;
+   }
+   
+   .project-3 {
+     padding: 50px;
+     width: 5%;
+     height: 15px;
+     border: var(--proj-border);
+     background-color: blue;
+     margin: 10px 80px -50px 30px;
+   }
+   
+   .project-4 {
+     padding: 50px;
+     width: 5%;
+     height: 15px;
+     border: var(--proj-border);
+     background-color: yellow;
+     margin: 0px 0px -10px 85px;
+   }
+   
+   .project-5 {
+     padding: 50px;
+     width: 5%;
+     height: 15px;
+     border: var(--proj-border);
+     background-color: purple;
+     margin: 0px 80px -10px 30px;
+   }
+
+   /* contact list */
+  
+  .contact-list-items {
+    list-style-type: none;
+   
+    margin-left: 5px;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+
+ 
+}
